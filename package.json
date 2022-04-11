@@ -1,0 +1,23 @@
+{
+  "name": "test-backend-dev",
+  "version": "1.0.0",
+  "description": "Test backend developer",
+  "main": "app.js",
+  "repository": "https://github.com/Giacomo411/test-backend-dev",
+  "author": "Giacomo Natali",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon --watch ./models --watch ./routes --watch app.js --inspect ./app.js"
+  }
+}
